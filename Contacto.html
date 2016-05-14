@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Demo External JS</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+  </head>
+  <body>
+    <form method="POST" action="registro.html" onsubmit="return validarFormularioRegistro();">
+      <div>
+        <label for="txtNombre">Nombre:</label>
+        <input type="text" id="txtNombre" name="txtNombre"/>
+      </div>
+      <div>
+        <label for="txtDireccion">Dirección:</label>
+        <input type="text" id="txtDireccion" name="txtDireccion"/>
+      </div>
+      <div>
+        <label for="txtTelefono">Telefono:</label>
+        <input type="text" id="txtTelefono" name="txtTelefono"/>
+      </div>
+      <div>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Cancelar"/>
+      </div>
+    </form>
+  </body>
+</html>
