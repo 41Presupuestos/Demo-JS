@@ -46,3 +46,30 @@ function validarFormularioFoocus() {
     }
     return true;
 }
+
+function validarFormularioResumen(){
+    var errores = "";
+    var nombre = document.getElementById("txtNombre").value;
+    var direccion = document.getElementById("txtDireccion").value;
+    var telefono = document.getElementById("txtTelefono").value;
+    
+    if (nombre.length==0) {
+      errores += "*Ingrese el Nombre <br>";
+    }
+    
+    if (direccion.length==0) {
+      errores += "* Ingrese la Direccion <br>";
+    }
+    
+    if (telefono.length==0) {
+      errores += "* Ingrese el Telefono";
+    }
+    
+    if (errores.length>0) {
+      var error = document.getElementById("error");
+      error.innerHTML = errores;
+      return false;
+    }else{
+      return true;
+    }
+}
